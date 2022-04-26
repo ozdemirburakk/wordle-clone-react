@@ -35,6 +35,7 @@ function App() {
     if (wordSet.has((currWord + "\r").toLowerCase())) {
       setCurrAttempt({ attempt: currAttempt.attempt + 1, letter: 0 });
     } else {
+      console.log(currWord);
       alert("Word not found");
     }
 
